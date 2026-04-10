@@ -5,6 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://bmvloiaciierv" path="res://assets/running_16.png" id="2_pkhve"]
 [ext_resource type="Texture2D" uid="uid://bvc8nl5ftc2v3" path="res://assets/jump_16.png" id="3_jy00i"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_23qpd"]
+atlas = ExtResource("3_jy00i")
+region = Rect2(14, 0, 14, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_pkhve"]
 atlas = ExtResource("1_wojmw")
 region = Rect2(0, 0, 14, 16)
@@ -16,10 +20,6 @@ region = Rect2(14, 0, 14, 16)
 [sub_resource type="AtlasTexture" id="AtlasTexture_sbdny"]
 atlas = ExtResource("3_jy00i")
 region = Rect2(0, 0, 14, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_23qpd"]
-atlas = ExtResource("3_jy00i")
-region = Rect2(14, 0, 14, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jy00i"]
 atlas = ExtResource("2_pkhve")
@@ -52,6 +52,14 @@ region = Rect2(84, 0, 14, 16)
 [sub_resource type="SpriteFrames" id="SpriteFrames_jy00i"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23qpd")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
 "duration": 3.0,
 "texture": SubResource("AtlasTexture_pkhve")
 }, {
@@ -65,9 +73,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_sbdny")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_23qpd")
 }],
 "loop": true,
 "name": &"jump",
