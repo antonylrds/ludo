@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dw0nfetcfiicu" path="res://scenes/char.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://85kw2yvlkwjf" path="res://scripts/camera_2d.gd" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bn16b6s0p35g" path="res://scenes/stage.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://dosxsveqqcq7r" path="res://scenes/enemy.tscn" id="4_lbhrr"]
 
 [node name="Game" type="Node2D" unique_id=136939852]
 
@@ -17,3 +18,6 @@ target = NodePath("../Char")
 
 [node name="Char" parent="." unique_id=423912965 instance=ExtResource("1_uwrxv")]
 position = Vector2(100, 258)
+
+[node name="Enemy" parent="." unique_id=334448805 instance=ExtResource("4_lbhrr")]
+position = Vector2(244, 453)
